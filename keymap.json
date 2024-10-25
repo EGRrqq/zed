@@ -21,6 +21,15 @@
     }
   },
   {
+    "context": "VimControl && !menu && vim_mode != operator",
+    "bindings": {
+      "w": "vim::NextSubwordStart",
+      "b": "vim::PreviousSubwordStart",
+      "e": "vim::NextSubwordEnd",
+      "g e": "vim::PreviousSubwordEnd"
+    }
+  },
+  {
     "context": "VimControl && !menu",
     "bindings": {
       "ctrl-shift-u": "vim::ScrollUp",

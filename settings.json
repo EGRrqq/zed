@@ -14,7 +14,13 @@
     "light": "One Light",
     "dark": "One Dark"
   },
+  "terminal": {
+    "copy_on_select": true
+  },
   "vim_mode": true,
+  "use_system_clipboard": "on_yank",
+  "use_multiline_find": true,
+  "use_smartcase_find": true,
   "autosave": "on_focus_change",
   "relative_line_numbers": true,
   "ui_font_weight": 600,
