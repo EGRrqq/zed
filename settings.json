@@ -7,28 +7,52 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
-  "ui_font_size": 18,
-  "buffer_font_size": 18,
-  "theme": {
-    "mode": "system",
-    "light": "One Light",
-    "dark": "One Dark"
-  },
-  "terminal": {
-    "copy_on_select": true
-  },
-  "vim_mode": true,
-  "use_system_clipboard": "on_yank",
-  "use_multiline_find": true,
-  "use_smartcase_find": true,
-  "autosave": "on_focus_change",
-  "relative_line_numbers": true,
-  "ui_font_weight": 600,
-  "buffer_font_weight": 600,
-  "format_on_save": "on",
-  "command_aliases": {
-    "W": "w",
-    "Wq": "wq",
-    "Q": "q"
-  }
+	"file_types": {
+		"GLSL": ["glsl", "vs", "fs", "vert", "frag"]
+	},
+	"assistant": {
+		"default_model": {
+			"provider": "ollama",
+			"model": "qwen2.5-coder:latest"
+		},
+		"version": "2"
+	},
+	"formatter": {
+		"language_server": {
+			"name": "biome"
+		}
+	},
+	"code_actions_on_format": {
+		"source.fixAll.biome": true,
+		"source.organizeImports.biome": true
+	},
+	"format_on_save": "on",
+	"ui_font_size": 18,
+	"buffer_font_size": 18,
+	"theme": {
+		"mode": "system",
+		"light": "One Light",
+		"dark": "One Dark"
+	},
+	"experimental.theme_overrides": {
+		// "panel.background": "#f5f5f5",
+		"border": "#000000",
+		"border.variant": "#000000"
+	},
+	"terminal": {
+		"copy_on_select": true
+	},
+	"vim_mode": true,
+	"use_system_clipboard": "on_yank",
+	"use_multiline_find": true,
+	"use_smartcase_find": true,
+	"autosave": "on_focus_change",
+	"relative_line_numbers": true,
+	"ui_font_weight": 600,
+	"buffer_font_weight": 600,
+	"command_aliases": {
+		"W": "w",
+		"Wq": "wq",
+		"Q": "q"
+	}
 }
